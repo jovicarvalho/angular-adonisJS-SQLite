@@ -34,7 +34,7 @@ export default class BirdsController {
     }
 
     public async index() {
-        const birds = await Bird.all()
+        const birds = await Bird.query().preload('comments')
 
         return {
             data:birds,
@@ -44,6 +44,7 @@ export default class BirdsController {
     public async show ({params}:HttpContextContract){
 
         const bird = await Bird.findOrFail(params.id)
+        await bird.load('comments')
 
         return {
             data:bird,
