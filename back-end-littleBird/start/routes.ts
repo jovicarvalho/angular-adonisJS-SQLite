@@ -11,4 +11,4 @@ Route.group(() =>{
   Route.post('/birds/:birdId/comments', 'CommentsController.store')
 
 
-}).prefix('/api')
+}).prefix('/')
