@@ -6,7 +6,7 @@ nav {
     display: flex;
     justify-content: space-between ;
     padding: 1em;
-    border-bottom: 10px solid yellow;
+    border-bottom: 10px solid #008b8b;
 }
 
 .brand,
@@ -39,10 +39,3 @@ nav {
     border-radius: 30px;
 } 
 
-#add a {
-    color : yellow;
-}
-
-#add a:hover{
-    background-color:#9932cc;
-}

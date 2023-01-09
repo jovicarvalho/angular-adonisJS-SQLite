@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -8,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { NewBirdComponent } from './components/pages/new-bird/new-bird.component';
+import { BirdFormComponent } from './components/bird-form/bird-form.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,16 @@ import { NewBirdComponent } from './components/pages/new-bird/new-bird.component
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    NewBirdComponent
+    NewBirdComponent,
+    BirdFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
