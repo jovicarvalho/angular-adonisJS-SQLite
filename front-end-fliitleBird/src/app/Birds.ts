@@ -1,6 +1,6 @@
 export interface Birds {
     id?: number,
-    speciev:string,
+    specie:string,
     place:string,
     image:string,
     created_at?:string;

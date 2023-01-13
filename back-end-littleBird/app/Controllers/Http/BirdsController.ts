@@ -66,7 +66,7 @@ export default class BirdsController {
         const body = request.body();
         const bird = await Bird.findOrFail(params.id)
 
-        bird.spicie = body.spicie
+        bird.specie = body.specie
         bird.place = body.place
 
 

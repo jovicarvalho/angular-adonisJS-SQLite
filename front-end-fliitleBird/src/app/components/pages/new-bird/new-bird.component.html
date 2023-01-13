@@ -1,2 +1,5 @@
 <h2> Compartilhe o seu <span> Pássaro </span>!</h2>
-<app-bird-form [btnText] ="btnText"></app-bird-form>
+<app-bird-form 
+[btnText] ="btnText" 
+(onSubmit) = "createHandler($event)">
+</app-bird-form>

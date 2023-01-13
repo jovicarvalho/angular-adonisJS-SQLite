@@ -10,7 +10,7 @@ export default class Bird extends BaseModel {
   public id: number
 
   @column()
-  public spicie: string
+  public specie: string
 
   @column()
   public place: string
